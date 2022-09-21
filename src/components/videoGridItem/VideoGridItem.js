@@ -18,7 +18,7 @@ const VideoGridItem = ({video}) => {
     <div class="col-span-12 sm:col-span-6 md:col-span-3 duration-300 hover:scale-[1.03]">
       <div class="w-full flex flex-col">
         <div class="relative">
-          <Link to={`/video/${id}`}>
+          <Link to={`/videos/${id}`}>
             <img src={thumbnail} class="w-full h-auto" alt={title} />
           </Link>
 
@@ -28,17 +28,17 @@ const VideoGridItem = ({video}) => {
         </div>
 
         <div class="flex flex-row mt-2 gap-2">
-          <Link to={`/video/${id}`} class="shrink-0">
+          <Link to={`/videos/${id}`} class="shrink-0">
             <img src={avatar} class="rounded-full h-6 w-6" alt={author} />
           </Link>
 
           <div clas="flex flex-col">
-            <Link to={`/video/${id}`}>
+            <Link to={`/videos/${id}`}>
               <p class="text-slate-900 text-sm font-semibold">{title}</p>
             </Link>
             <Link
               class="text-gray-400 text-xs mt-2 hover:text-gray-600"
-              to={`/video/${id}`}
+              to={`/videos/${id}`}
             >
               {title}
             </Link>
