@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import Loader from '../../components/loader/Loader';
 import RelatedVideos from '../../components/relatedVideos/RelatedVideos';
 import VideoPlayer from '../../components/videoPlayer/VideoPlayer';
 import { asyncFetchVideoDetails } from '../../features/videoDetails/videoDetailsSlice';
-import Loader from '../../components/loader/Loader'
 
 const VideoDetails = () => {
 
@@ -36,7 +36,7 @@ const VideoDetails = () => {
 
    if (!isLoading && !isError && videoDetails?.id) {
      content = (
-       <div class="grid grid-cols-3 gap-2 lg:gap-8">
+       <div className="grid grid-cols-3 gap-2 lg:gap-8">
          <VideoPlayer videoDetails={videoDetails} />
 
          {/* <!-- related videos --> */}
@@ -47,8 +47,8 @@ const VideoDetails = () => {
    }
 
   return (
-    <section class="pt-6 pb-20">
-      <div class="mx-auto max-w-7xl px-2 pb-20 min-h-[400px]">
+    <section className="pt-6 pb-20">
+      <div className="mx-auto max-w-7xl px-2 pb-20 min-h-[400px]">
         {content}
       </div>
     </section>

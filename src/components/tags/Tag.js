@@ -24,7 +24,7 @@ const Tag = ({title}) => {
     }
 
     return (
-      <div class={style} onClick={handleSelect}>
+      <div className={style} onClick={handleSelect}>
         {title}
       </div>
     );

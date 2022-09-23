@@ -35,7 +35,7 @@ const RelatedVideos = ({ currentVideoId, tags }) => {
 
 
   return (
-    <div class="col-span-full lg:col-auto max-h-[570px] overflow-y-auto">
+    <div className="col-span-full lg:col-auto max-h-[570px] overflow-y-auto">
       {/* <!-- single related video --> */}
       {content}
     </div>
