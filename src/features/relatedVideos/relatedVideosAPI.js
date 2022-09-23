@@ -16,4 +16,5 @@ export const getRelatedVideos = async ({tags, id}) => {
   const response = await axiosInstance.get(`/videos?${queryString}`);
 
   return response.data;
+  
 };
